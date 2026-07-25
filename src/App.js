@@ -95,7 +95,7 @@ function App() {
         fetchHistory();
       }
     } catch {
-      setError('Cannot connect to the server. Make sure the backend is running on port 8000.');
+      setError('Cannot connect to the backend server. Please try again.');
     } finally { setLoading(false); }
   };
 
