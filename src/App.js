@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import './index.css';
 
-const API_BASE = 'http://localhost:8000/api';
+const API_BASE = process.env.REACT_APP_API_BASE || 'https://stock-backend-kappa.vercel.app/api';
 
 // ── Generate multiples of 50 for Max Risk dropdown ──────────────────
 const MAX_RISK_OPTIONS = (() => {
